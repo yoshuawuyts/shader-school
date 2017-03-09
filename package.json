@@ -23,7 +23,7 @@
     "beefy": "^2.0.2",
     "brfs": "^1.1.1",
     "browser-menu": "0.0.2",
-    "browserify": "^4.1.10",
+    "browserify": "^12.0.0",
     "canvas-fit": "0.0.0",
     "chalk": "^0.4.0",
     "clamp": "^1.0.0",
