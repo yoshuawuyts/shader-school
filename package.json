@@ -7,7 +7,9 @@
   "scripts": {
     "pack": "rm -rf answers; rm -rf node_modules && npm install && npm dedupe && node prepack && find . -type file | grep -v workshop.tar.gz | grep -v .git | tar -cvzf ./workshop.tar.gz -T - && node postpack",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "mkdir answers; cd answers && NODE_ENV=development node .."
+    "start": "mkdir answers; cd answers && NODE_ENV=development node ..",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "authors": [
     "Hugh Kennedy <hughskennedy@gmail.com> (http://hughsk.io/)",
@@ -70,6 +72,8 @@
     "stanford-dragon": "^1.0.0",
     "wordwrap": "0.0.2",
     "xhr": "^1.9.0",
-    "mouse-pressed": "0.0.1"
-  }
+    "mouse-pressed": "0.0.1",
+    "snyk": "^1.46.0"
+  },
+  "snyk": true
 }
